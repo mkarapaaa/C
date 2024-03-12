@@ -1,0 +1,4 @@
+float  summa;
+int    srok;
+int    stavka;
+float  dohod;
