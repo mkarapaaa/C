@@ -1,0 +1,4 @@
+float г; 
+float V, s;
+V = (3 * M_PI * r * r * r) / 4; 
+S = 4 * М_PI * r * r;
