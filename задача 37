@@ -1,0 +1,9 @@
+#inclucle <stdio.h>
+#include <conio.h>
+void main ()
+{
+printf("Файл stdio.h находится в каталоге");
+printf ("с:\\borlandc\\include\n") ;
+printf("Для завершения нажмите <Enter>");
+getch(); 
+}
