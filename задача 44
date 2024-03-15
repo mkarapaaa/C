@@ -1,0 +1,14 @@
+#include <conio.h>
+void main()
+{
+textbackground(BLUE); // цвет фона
+textcolor(LIGHTGRAY); // цвет символов
+clrscrO; // очистить экран
+cprintf("Буря мглою небо кроет\п\г");
+cprintf("Вихри снежные крутя.\n\г");
+cprintf ("То как зверь она завоет\n\г")
+cprintf("То заплачет, как дитя.\n\n\r")
+cprintf("            А.С.Пушкин\n\n\г")
+cprintf("\n\nДля завершения нажмите <Enter>") ;
+getch () ;
+}
