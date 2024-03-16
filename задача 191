@@ -1,0 +1,20 @@
+#include "stdio.h" 
+#include "conio.h"
+unsigned int factor(int x)
+{
+  unsigned int f = 1;
+  for (int i=2; i <= x; i++)
+    f *= i; 
+  return(f);
+}
+void main() {
+unsigned int f; 
+puts("\nТаблица факториалов"); 
+for (int n=1; n <= 8; n++)
+{
+  f = factor(n);
+  printf("%2i %u\n", n, f); 
+}
+puts("\nДля завершения работы нажмите <Enter>");
+getch();
+}
