@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int n1,n2; 
+int nod; 
+int г;
+printf("\nВычисление наибольшего общего делителя "); 
+printf("для двух целых чисел.\n");
+printf("Введите в одной строке два числа "); 
+printf("и нажмите <Enter>");
+printf("-> ");
+scanf("%i%i", &nl,&п2);
+printf("НОД чисел %i и %i - это ", n1, n2); 
+while (n1 % n2)
+{
+  г = n1 % n2; 
+  n1 = п2;
+  n2 = г;
+}
+nod = n2; 
+printf("%i\n", nod);
+printf("\nДля завершения нажмите <Enter>");
+getch(); 
+}
