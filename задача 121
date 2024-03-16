@@ -1,0 +1,23 @@
+#include <stdio.h> 
+#include <conio.h> 
+#include "math.h"
+#define LB -4 
+#define НВ 4 
+#define DX 0.5 
+void main() 
+{
+  float х,у; 
+  int n; 
+  int i; 
+  printf("\nТаблица значений функции у=|х| \n"); 
+  n= (НВ-LB)/DX+1;
+  x = LB;
+  for (i=1;i<=n;i++)
+  {
+    у = fabs(x);
+    printf("%4.2f %3.2f\n", X, y); 
+    x += DX;
+  }
+  printf("\пДля завершения нажмите <Enter>");
+  getch(); 
+}
