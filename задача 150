@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+#define НВ 5
+void mainO {
+int a[HB]; 
+int k; 
+int ok;
+printf("Совпадений с образцом нет");
+printf("Проверка, упорядочен ли массив\n"); 
+printf("по возрастанию\n");
+printf("Введите массив (%i целых чисел ",НВ);
+printf("в одной строке) и нажмите <Enter>\n");
+for (k = 0; k < НВ; k++)
+  scanf("%i", &а[k]);
+k = 0; 
+ok = 1; 
+do {
+  if (a[k] > a[k+l]) 
+    ok = 0;
+  k++;
+} while (k < HB-1 && ok);
+printf("Элементы массива "); 
+if ( !ok )
+  printf("не упорядочены "); 
+  printf("по возрастанию\n");
+printf("\nДля завершения работы нажмите <Enter>"); 
+getch();
+}
