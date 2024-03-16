@@ -1,0 +1,38 @@
+iinclude <stdio.h>
+#include <conio.h>
+#include "stdlib.h"
+void main () {
+char st[40]; 
+char buf[10]; 
+char op;
+int rez;
+int n; 
+int i,j;
+printf("\nВведите арифметическое выражение,\n"); 
+printf("например, 45+5-3-125+2 и нажмите <Enter>"); 
+printf("(пробелы и другие знаки недопустимы)\n");
+printf("->");
+scanf("%s", &st);
+rez = 0; 
+op = ' ';
+i = j = 0;
+while( st[i] )
+{
+  j = 0;
+  while (st[i] >= '0' && st[i] <= '9')
+    buf[j++] = st[i++];
+buf[j] = '\0';
+n = atoi(buf); 
+switch ( op )
+{
+case '+': rez += n; break;
+case '-': rez -= n; break;
+case ' ': rez = n; break; // первое число примера
+}
+// выделить знак операции
+ор = st[i++]; 
+}
+printf("Значение введенного выражения: %d", rez); 
+printf("\nДля завершения нажмите <Enter>"); 
+getch();
+}
