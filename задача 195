@@ -1,0 +1,26 @@
+#include "stdio.h" 
+#include "conio.h"
+char* upcase(char *st)
+{
+  int i = 0;
+  while ( st[i] )
+{
+  if (st[i] >= 'а' && st[i] <= 'z' || // латинские 
+      st[i] >= 'а' && st[i] <= 'n') // русские
+      st[i] -= 32;
+  else if (st[i] >= 'p' && st[i] <= 'я'
+      st[i] -= 80; 
+      i++;
+  }
+  return St;
+}
+void main()
+{
+char st[80];
+puts("Введите строку текста и нажмите <Enter>");
+printf("->");
+gets(st);
+puts(upcase(st));
+puts("\nДля завершения нажмите <Enter>");
+getch();
+}
