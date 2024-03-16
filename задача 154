@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <conio.h>
+#define SZ 5
+void main() 
+{
+int a[SZ]; 
+int i; 
+int k; 
+int buf;
+printf("\nСортировка массива методом \"пузырька\"\n"); 
+printf("Введите массив (в одной строке %i ", SZ); 
+printf("целых чисел) и нажмите <Enter>\n");
+for (k = 0; k < SZ; k++)
+  scanf("%i", &а[k]);
+printf("Сортировка...\n");
+for (i=0;i<SZ-1;i++) 
+{
+  for (k = 0; к < SZ-1; k++)
+  { 
+    if(a[k] > a[k+1])
+    {
+        buf = а[k];
+        а[k] = а[k+1];
+        а[k+1] = buf;
+    }
+  }  
+for (k = 0 ; к < SZ; k++)
+  printf("%i ",а[k]); 
+printf("\n");
+}
+printf("Массив отсортирован\n"); 
+for (k = 0 ; k < SZ; k++)
+printf("%i ",а[k]);
+printf("\n\nДля завершения работы нажмите <Enter>");
+getch(); 
+}
