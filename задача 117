@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+void main() 
+{
+float а; 
+int n;
+float sum; 
+float sred;
+float min; 
+float max; 
+int i;
+printf("Обработка последовательности дробных чисел.\n");
+printf("Введите количество чисел последовательности ->"); 
+scanf("%i", &n);
+printf("Введите последовательность.\n");
+printf("После ввода каждого числа нажимайте <Enter>");
+printf("->");
+scanf("%f",&а); 
+min = а; 
+max = а; 
+sum = а;
+for (i = 1; i < n; i++)
+{
+  printf("->"); 
+  scanf("%f", &a);
+  sum += a;
+  if (a<min) min=a; 
+  if (a>max) max=a;
+}
+sred = sum / n;
+printf("Количество чисел: %i\n",n);
+printf("Среднее арифметическое: %6.2f\n", sred);
+printf("Минимальное число: %6.2f\n", min); 
+printf("Максимальное число: %6.2f\n", max);
+printf("\nДля завершения нажмите <Enter>"); 
+getch();
+}
