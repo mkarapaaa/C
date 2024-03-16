@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <conio.h>
+#define SZ 30 
+void main() {
+int r; /
+int rost[SZ]; 
+int п = 0;
+float sred; 
+int m = 0;
+int sum = 0; 
+int i = 0;
+printf("*** Анализ роста учеников ***\n"); 
+printf("Вводите рост (см) учеников\n");
+printf("Для завершения введите О и нажмите <Enter>\n");
+do {
+  printf("-> ");
+  scanf("%i", &r); 
+  if ( r )
+  {
+    rost[i++] = r;  
+    sum += r; 
+    n++;
+  }
+}  while (r && i < SZ);
+if ( n ) 
+{
+sred = (float) sum / n; 
+m = 0;
+for (i = 0; i < n; i++)
+  if (rost[i] > sred) m++;
+printf("Средний рост: %3.2f см\n", sred);
+printf("У %i учеников рост превышает средний\n", m) ; 
+}
+printf("\nДля завершения нажмите <Enter>"); 
+getch();
+}
