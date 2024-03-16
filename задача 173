@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char st[40]; 
+int i;
+printf("Введите целое число и нажмите <Enter>"); 
+printf("->");
+scanf("%s",&st);
+i = 0;
+while (st[i] >= '0' && st[i] <- '9') 
+  i++; 
+printf("Введенная строка ");
+if (st[i])
+  printf("не ");
+printf("является целым числом. \n");
+printf("\nДля завершения нажмите <Enter>");
+getch(); 
+}
