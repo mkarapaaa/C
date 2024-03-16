@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+#define ROW 3
+#define COL 5
+void main() {
+int a[ROW][COL]; 
+int s[COL]; 
+int i,j;
+printf("\nВведите массив\n");
+printf("После ввода элементов каждой строки,");
+printf("\n%i целых чисел, нажимайте <Enter>\n", COL); 
+for (i=0; i < ROW; i++)//ROW строк
+{
+  printf("->");
+  for (j=0;j<COL;j++) 
+    scanf("%i", &a[i][j]);
+}
+printf("\nВведенный массивХп"); 
+for (i=0;i<ROW;i++)
+{
+  for (j=0;j<COL;j++)
+    printf("%i " , a[i][j]); 
+    printf("\n");
+}
+// "очистим" массив s 
+for (i=0;i<COL;i++)
+  s[i] = 0;
+// обработка
+for (j = 0 ; j < COL; j++)
+  for (i = 0; i < ROW; i++) // суммируем эл-ты
+s[j] += a[i][j];
+printf ("-------------------------\n");
+for (i=0; i < COL; i++)
+  printf("%i ", s[i]);
+printf("\nДля завершения нажмите <Enter>");
+getch(); 
+}
