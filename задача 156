@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <conio.h>
+#define SZ 10 
+void main()
+{
+int a[SZ]; // массив целых
+int obr; // образец для поиска 
+int ok; // 1 - массив упорядочен
+int verh,niz; 
+int sred;
+int found;
+int n;
+int i;
+printf("*** Бинарный поиск ");
+printf("в упорядоченном массиве ***\n"); 
+printf("Введите массив (в одной строке %i ", SZ);
+printf("целых чисел) и нажмите <Enter>\n"); 
+printf("-> ");
+for (i = 0; i < SZ; i++)
+  scanf("%i", &a[i]);
+ok = 1; // пусть массив упорядочен
+i = 0;
+do
+  if (a[i] <= a[i-bl])
+  i++;
+  else ok = 0;
+while (ok && i < SZ-1);
+if ( !ok) {
+  puts("Введенный массив не является");
+  puts("упорядоченным по возрастаниюХп"); 
+  goto bye;
+}
+printf("Введите образец для поиска (целое число) -> ");
+scanf("%i", &obr);
+// бинарный поиск
+verh = 0;
+niz = SZ - 1; 
+found = 0;
+n = 0; 
+do {
+  sred = (niz-verh) /2 + verh; 
+  n++;
+  if (a[sred] == obr)
+    found = 1;
+else
+  if ( obr < а[sred])
+    niz = sred-1; 
+  else verh = sred+1;
+} while (verh <= niz && !found);
+if (found) {
+  printf("Совпадение с элементом номер %i ", sred); 
+  printf("Выполнено %i сравнений" , n);
+}
+else
+  printf("Образец в массиве не найден\n"); 
+bye:
+printf("\nДля завершения работы нажмите <Enter>");
+getch(); 
+}
