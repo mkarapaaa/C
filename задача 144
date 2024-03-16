@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#define HB 5 // размер массива 
+void main()
+{
+int a[HB]; //массив
+int min; // номер минимального элемента 
+int i; // индекс массива
+printf("\nПоиск минимального элемента массива\n"); 
+printf("Введите в одной строке элементы массива\n"); 
+printf("%i целых чисел, и нажмите <Enter>\n",НВ);
+printf("-> ");
+for (i = 0; i < HB; i4-+) 
+  scanf("%i",&a[i]);
+min = 0 ; 
+for (i = 1; i < HB; i++)
+  if (a[i] < a[min]) min = i; 
+printf("Минимальный элемент массива: ");
+printf("a[%i]=%i ", min+1, a[min]);
+printf("\nДля завершения нажмите <Enter>");
+getch();
+}
