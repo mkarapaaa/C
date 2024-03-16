@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <conio.h>
+#include "string.h" 
+void main()
+{
+char st[5];
+unsigned int dec;// десятичное число
+int v; // вес разряда шестнадцатеричного числа 
+int err=0; 
+printf("Введите шестнадцатеричное ");
+printf("(не более 4-х знаков) число\n");
+printf("-> ");
+scanf("%s",&st);
+// преобразуем введенную строку к верхнему регистру 
+strupr(st);
+dec = 0;
+V = 1; 
+for ( i = strlen(st) -1; i >= 0; i—-)
+{
+  //printf("\n%d\n",v);
+  if (st[i] >= '0' && st[i] <= '9')
+dec +- V * (st[i]- 48); 
+  else
+if (st[i] >= 'A' && st[i] <= 'F'
+  dec += V * (st[i3-55);
+else 
+  { err = l;
+    break; }
+  V *= 16; // вес следующего разряда
+}
+if ( !err ) {
+  printf("Шестнадцатеричному числу %s ",st);
+  printf("соответствует десятичное %u\n",dec); 
+}
+else {
+  printf("Строка %s не яъляечося ",st); 
+  printf("шестнадцатеричным числом\n");
+}
+printf("\nДля завершения нажмите <Enter>"); 
+getch();
+}
+}
+}
