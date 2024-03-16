@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+float f;
+int r;
+int к;
+printf("\nПреобразование числа в денежный формат\n"),
+printf("Введите дробное число -> " ) ;
+scanf("%f",&f);
+r = (int)f;
+к = f * 100 - r*100;
+printf("%6.2f руб. - это %i руб.%i коп.\n", f, г, к);
+printf("\nДля завершения нажмите <Enter>");
+getch();
+}
