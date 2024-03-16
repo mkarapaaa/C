@@ -1,0 +1,4 @@
+float dohod(float sum, float stavka, int srok) 
+{
+  return(sum*(stavka/100/365)*srok);
+}
