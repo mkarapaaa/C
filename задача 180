@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int n; 
+int r;
+char st[5];
+int i;
+printf("\nПреобразование десятичного числа ); 
+printf (."в шестнадцатеричное\n") ; 
+printf("Введите целое число ->"); 
+scanf("%d", &n);
+printf("\nДесятичному числу %d", n); 
+printf(" соотвествует шестнадцатеричное "); 
+st[5] = '\0';
+i = 4;
+do {
+  r=n % 16; //очереднаяцифра
+  n=n / 16; // целая часть рез-та деления 
+  if (г<10)
+    st[i—] = г + 48; 
+  else st[i--] = r + 55;
+} while (n > 0);
+i++;
+int j = 0;
+while( st[i] )
+  st[j++] = st[i++]; 
+st[j] = '\0';
+printf("%s\n", st);
+printf("\nДля завершения нажмите <Enter>");
+getch(); 
+}
