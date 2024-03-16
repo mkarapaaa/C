@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <conio.h>
+void main() 
+{
+int osn, n, cn, r;
+char st[17];
+int i;
+printf("\nВведите целое число ->");
+scanf("%d", &n);
+printf("Введите основание системы счисления ->"); 
+scanf("%d", &osn);
+cn = n;
+st[16] ='\0';
+i = 15;
+do {
+  r = n % osn; // очередная цифра
+  n = n / osn; // целая часть деления
+  st[i—-] = r + 48; 
+} while (п >0);
+i++;
+int j = 0;
+while(St[i])
+  st[j++] = st[i++]; 
+st[j] = '\0';
+st[i—-] = ' ';
+printf("Десятичному числу %d соответствует ", cn); 
+printf("число %s по основанию %d\n", st, osn);
+printf("\пДля завершения нажмите <Enter>"); 
+getch();
+}
