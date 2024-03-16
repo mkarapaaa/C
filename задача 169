@@ -1,0 +1,14 @@
+#include <stdio.h> 
+#include <conio.h> 
+void main()
+{
+  unsigned charch;
+  printf("\nВводите символы.\n");
+  printf("Для завершения введите точку.\n"); 
+  do{
+    ch = getch();
+    printf("Символ: %c Код: %i\n", ch, ch);
+    } while ( ch != '.');
+printf("\n\nДля завершения нажмите <Enter>"); 
+getch();
+}
