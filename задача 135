@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int а;
+int min; 
+printf("\nОnpeделение минимального числа\n");
+printf("в последовательности положительных чисел.\n");
+printf("Вводите числа. Для завершения введите ноль.\n"); 
+printf("-> ");
+scanf("%i", &а);
+min = а; 
+while ( а > 0)
+{
+  if (а<min) min=а; 
+  printf("-> "); 
+  scanf("%i", &a);
+}
+printf("Минимальное число последовательности: "); 
+printf("%i\n", min);
+printf("\nДля завершения нажмите <Enter>");
+getch();
+}
