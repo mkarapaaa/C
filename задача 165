@@ -1,0 +1,16 @@
+#include <stdio.h> 
+#include <conio.h> 
+void main ()
+{
+char name[15]; // имя 
+char fam[20] ; // фамилия
+printf("KaK Вас зовут?\n") ;
+printf("Введите свое имя и фамилию,"); 
+printf("затем нажмите <Enter>");
+printf("-> ");
+scanf("%s", &name);
+scanf("%s", &fam);
+printf("Здравствуйте, %s %s!\n", name, fam);
+printf("\nДля завершения нажмите <Enter>");
+getch(); 
+}
