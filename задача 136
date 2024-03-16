@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int n; 
+int d;
+int r; 
+printf ("Введите целое число--> ");
+scanf("%i", &n);
+d = 2; 
+do {
+  г = n % d;
+  if (г != 0) d++;
+}
+while ( г != О ); // пока n не разделится на d 
+if (d == n)
+  printf("%i - простое число" ,n);
+else printf("%i - не простое число" ,n);
+printf("\n\nДля завершения нажмите <Enter>"); 
+getch();
+}
