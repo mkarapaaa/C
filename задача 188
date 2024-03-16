@@ -1,0 +1,8 @@
+float sopr( float rl, float г2, int t)
+{
+float r;
+if (t==l) r= r1 +r2;
+  else if (t== 2) r = r1*r2/(r1+r2);
+    else r = -1; 
+return(г);
+}
