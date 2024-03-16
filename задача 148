@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char *day[] = {"Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
+float t[7]; 
+float sum; 
+float sred; 
+int i;
+printf("\nВведите температуру воздуха:\n"); 
+for (i=0;i<=6;i++)
+{
+  printf("%s->", day[i]); 
+  scanf("%f", &t[i]); 
+  sum += t[i];
+}
+sred = sum / 7;
+printf("\nСредняя температура за неделю: %2.1f", sred);
+printf("\nДля завершения работы нажмите <Enter>");
+getch();
+}
