@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+float t;
+int ts;
+int min;
+int sek;
+printf("Введите время (минут.секунд) -> " ) ;
+scanf("%f", &t);
+min = t; 
+sek = (t - min) * 100;
+if (sek > 60)
+{
+printf("Ошибка!");
+printf("Количество секунд не может быть больше 60");
+}
+else
+{
+ts = min * 60 + sek;
+printf("%i мин %i сек = %i сек", min, sek, ts);
+}
+printf("\nДля завершения нажмите <Enter>");
+getch();
+}
