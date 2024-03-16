@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <conio.h>
+#define SZ 5 
+void main() {
+inta[SZ], b[SZ]; 
+int c[SZ*2]; 
+int k,i,m; 
+printf("Объединение двух упорядоченных "); 
+printf("по возрастанию массивов\п"); 
+printf("Введите первый массив ");
+printf("(%i целых чисел) -> ",SZ); 
+for (k = 0; k < SZ; к++)
+  scanf("%i", &а[k]); 
+printf("Введите второй массив ");
+printf("(%i целых чисел) -> ",SZ);;
+for (i = 0 ; i < SZ; i++)
+scanf("%i", &b[i]);
+k = i = m = 0; 
+do {
+  if (a[k] < b[i] ) 
+      c[m++] = a[k++];
+  else
+      if (a[k] > b[i])
+          c[m++] = b[i++]; 
+      else {
+          с[m++] = a[k++];
+          c[m++] = b[i++] ; 
+      }
+} while ( к < SZ && i < SZ);
+while (k < SZ) 
+  с[m++] = а[k++];
+while (1 < SZ) 
+  с[т++] = b[i++];
+printf("Массив - результат: \п"); 
+for (1 = 0; i < 2 * SZ; i++)
+  printf("%i ", c[i]);
+printf("Для завершения работы нажмите <Enter>\n");
+getch(); 
+}
