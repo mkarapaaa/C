@@ -2,14 +2,18 @@
 #include <math.h>
 
 int main() {
-    float x = 5;
-    float y = 10;
-    float z, q;
+    float x, y, z, q;
 
-    // Вычисление z
+    // Ввод значений x и y
+    printf("Введите значение x: ");
+    scanf("%f", &x);
+    printf("Введите значение y: ");
+    scanf("%f", &y);
+
+    // Вычисление значения z
     z = (x + (2 + y) / (x * x)) / (y + 1 / sqrt(x * x + 10));
 
-    // Вычисление q
+    // Вычисление значения q
     q = 7.2 * sin(x) - fabs(y);
 
     printf("Значение z: %f\n", z);
